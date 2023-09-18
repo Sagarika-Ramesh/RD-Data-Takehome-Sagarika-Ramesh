@@ -1,6 +1,5 @@
 # RD-Data-Takehome-Sagarika-Ramesh
-Data Engineer Take Home
-
+REAL AND FAKE FACE DETECTOR
 
 Deep Learning Classifier used for the classification:
 1)VGG model - transfer learning(for feature extraction)
