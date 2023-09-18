@@ -1,0 +1,10 @@
+dataset_name: Real and Fake Face Image Dataset
+creation_date: September 16, 2023
+author_name: Sagarika Ramesh
+classes_categories:
+  - Real
+  - Fake
+number_of_images_per_class:
+  Real: 1000
+  Fake: 1000
+version: 1.0.0
