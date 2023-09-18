@@ -30,6 +30,7 @@ b. How you went about collecting the data.
 Answer: I randomly selected around 1000 images from both fake and real images.
 For test dataset, seperate source is used and around 200 of real and fake images are collected.
 These images are placed under dataset folder.
+
 Data for train and validation:
 Real images are obtained from Flickr. (Flickr-Faces-HQ (FFHQ)). 1082 random images are selected.
 Fake images are obtained from A Style-Based Generator Architecture for Generative Adversarial Networks created by
