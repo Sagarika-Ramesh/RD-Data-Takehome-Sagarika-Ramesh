@@ -1,0 +1,4 @@
+Model,Accuracy,Accuracy on rd_test_dataset
+VGG Model,> 67.726,56%
+CNN Model,> 66.015,59.09%
+VGG Face,> 80,59.09%
