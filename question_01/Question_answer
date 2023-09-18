@@ -30,11 +30,23 @@ b. How you went about collecting the data.
 Answer: I randomly selected around 1000 images from both fake and real images.
 For test dataset, seperate source is used and around 200 of real and fake images are collected.
 These images are placed under dataset folder.
+Data for train and validation:
+Real images are obtained from Flickr. (Flickr-Faces-HQ (FFHQ)). 1082 random images are selected.
+Fake images are obtained from A Style-Based Generator Architecture for Generative Adversarial Networks created by
+Tero Karras (NVIDIA), Samuli Laine (NVIDIA), Timo Aila (NVIDIA). It is made publicly available for research purposes.
+961 random images are selected. The data set is not imbalanced. There is no bias as the dataset contains people from different regions, race, age, gender and pose.
+
+Data for Test(Unseen Data):
+For test set, I have collected data from seperate source to avoid data leakage. Data is obtained from Computational Intelligence and Photography Lab,Department of Computer Science, Yonsei University.
+The data is expert-generated high-quality phot
 
 c. Besides fake/real labels, what other labels would you consider? Explain a simple method to sample a uniform dataset in the i.i.d sense, given the labels.
 Answer: Beside real/fake labels, I can consider the facial expression of a person(angry, sad, happy..) as labels. 
 I can also try to recognize try to classify as a person with glasses or without glasses. 
 There are many more.
+In each class subset, random sampling techniques can be employed to randomly select samples. 
+We can sample a fixed number of instances per class or opt for a specific percentage of samples from each class.
+
 
 d. What API (e.g Pandas, etc.) you used to store and organize meta information about the dataset.
 Answer:YAML file is used to store information about the image dataset in a structured format.
