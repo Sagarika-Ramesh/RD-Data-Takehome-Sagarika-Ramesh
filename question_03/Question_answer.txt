@@ -6,7 +6,7 @@ a. How will you divide your dataset into training and test sets.
 Answer: I will split my dataset into 80% train and  20% validation. I have a seperate test dataset(unseen).
 
 b. What data-augmentation techniques will to use for out-of-distribution (unseen) images?
-Answer:I have randomly flip the image vertically and horizontally. I can further improve this augumentation by changing contrast, zoom, and other augmentation techniques.
+Answer:I have randomly flip the image horizontally. I can further improve this augumentation by changing contrast, zoom, and other augmentation techniques.
 
 c. Please test accuracy on the attached, rd_test_dataset zipped face images, and save the output to a .csv file.
 https://drive.google.com/file/d/1jcdByJPkAGq9JsgsdLqeyLwI4Yl6plOf/view? usp=sharing
