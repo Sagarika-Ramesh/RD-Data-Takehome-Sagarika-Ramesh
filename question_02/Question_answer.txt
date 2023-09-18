@@ -6,4 +6,6 @@ a. Would you be happy with these results or would you like to do more analysis.
 Answer: I would do more analysis to ensure that it is not biased or overfitting.
 b. If so, what type of analysis would you perform?
 Answer: I would check for overfitting,I would perform K fold cross validation.
-Check for imbalanced data or biased data. I will make sure regularization and hyperparameter tuning is performed to mitigate overfitting, I will use suitable metric which is suitable for imbalanced data like F1-Score, confusion metric, AUROC Score.
+Check for imbalanced data or biased data. 
+I will make sure regularization and hyperparameter tuning is performed to mitigate overfitting, 
+I will use suitable metric which is suitable for imbalanced data like F1-Score, confusion metric, AUROC Score.
