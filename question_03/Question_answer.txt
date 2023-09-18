@@ -10,3 +10,4 @@ Answer:I have randomly flip the image vertically and horizontally. I can further
 
 c. Please test accuracy on the attached, rd_test_dataset zipped face images, and save the output to a .csv file.
 https://drive.google.com/file/d/1jcdByJPkAGq9JsgsdLqeyLwI4Yl6plOf/view? usp=sharing
+Accuracy on the unseen dataset is found to be around 65 by the 3 models. I am trying to increase the accuracy by hyperparameter tuning and increasing the epochs. 
