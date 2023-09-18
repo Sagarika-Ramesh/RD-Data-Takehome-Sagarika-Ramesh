@@ -1,0 +1,44 @@
+1. Design & build a small dataset (about 100+ images) to differentiate between real and fake face images. Please explain:
+   
+ 
+a. Considerations that went into deciding what data to collect.
+Answer: 
+I have tried to build the dataset using 2 different methods:
+Method1:
+Data for Train and Validation:
+Real images are obtained from Flickr. (Flickr-Faces-HQ (FFHQ)). 1082 random images are selected.
+Fake images are obtained from A Style-Based Generator Architecture for Generative Adversarial Networks created by
+Tero Karras (NVIDIA), Samuli Laine (NVIDIA), Timo Aila (NVIDIA). It is made publicly available for research purposes.
+961 random images are selected. The data set is not imbalanced. There is no bias as the dataset contains people from different regions, race, age, gender and pose.
+
+Data for Test(Unseen Data):
+For test set, I have collected data from seperate source to avoid data leakage. Data is obtained from Computational Intelligence and Photography Lab,Department of Computer Science, Yonsei University.
+The data is expert-generated high-quality photoshopped face images. These images are not obtained from GAN.
+
+Method2:(This method did not work - requires more time)
+I have chosen to use CelebA data. 
+Firstly, I wanted a data set that is publicly accessible to everyone.
+CelebA data contains 200,000+ images of celebrity faces and it includes diversity with people belonging to different races, genders,and ages. This data can be used as Real face Images.
+Fake Face images are then created using DCGAN(Deep Convolutional Generative Adversarial Network). 
+I tried to generate fake face images using this method but it was very time consuming to train the model and generate a deep fake face image. 
+Data set was downloaded from http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html website.
+I select random 400 images from that dataset to create celeb_face_real dataset.
+DCGA(Deep convolutional generative Adversarial network)was used to generate fake face images from the real face images. 80 epochs are run and the images generated after each epoch are stored in celeb_face_fake folder.
+
+
+b. How you went about collecting the data.
+Answer: I randomly selected around 1000 images from both fake and real images.
+For test dataset, seperate source is used and around 200 of real and fake images are collected.
+These images are placed under dataset folder.
+
+c. Besides fake/real labels, what other labels would you consider? Explain a simple method to sample a uniform dataset in the i.i.d sense, given the labels.
+Answer: Beside real/fake labels, I can consider the facial expression of a person(angry, sad, happy..) as labels. 
+I can also try to recognize try to classify as a person with glasses or without glasses. 
+There are many more.
+
+d. What API (e.g Pandas, etc.) you used to store and organize meta information about the dataset.
+Answer:YAML file is used to store information about the image dataset in a structured format.
+        It contains dataset name, creation date, author name, classes/categories, number of images, size and resolution of images, version of the meta data.
+
+e. Please share your mini-dataset as a zip file
+The zipfile is in the dataset folder. You can also download the dataset from https://drive.google.com/drive/folders/1Y8jfjAaej9GsIK1f3MUcjgiBH2qOywal?usp=drive_link

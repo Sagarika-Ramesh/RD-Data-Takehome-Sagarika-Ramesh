@@ -1,3 +1,6 @@
+
+The code(src.ipynb) is present in the folder question_01.
+
 3. Write a simple (supervised) deep classifier to train and test using the dataset collected in Q1.
 a. How will you divide your dataset into training and test sets.
 Answer: I will split my dataset into 80% train and  20% validation. I have a seperate test dataset(unseen).
